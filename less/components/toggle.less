@@ -8,11 +8,27 @@
   background-color: transparent;
 }
 
-.toggle__wrapper {
-  display: none;
+.toggle--closed .toggle__wrapper {
+  top: -500px;
 }
 
-.navigation__toggle-wrapper .toggle__btn-toggle::before {
+.toggle--opened .toggle__wrapper {
+  top: 0;
+}
+
+.toggle__wrapper {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 451px;
+  height: 500px;
+  background-color: @main-bg-color;
+  z-index: 4;
+  box-sizing: border-box;
+  padding: 33px 64.5px;
+}
+
+.toggle--closed .toggle__btn-toggle::before {
   content: '';
   position: absolute;
   height: 3px;
@@ -21,5 +37,47 @@
   left: 0;
   background-color: #fff;
   box-shadow: 0 12px 0 0 #ffffff, 0 24px 0 0 #ffffff;
+}
 
+.toggle--opened .toggle__btn-toggle {
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(28.96deg);
+  }
+
+  &::after {
+    transform: rotate(-28.96deg);
+  }
+}
+
+.toggle__list {
+  list-style-type: none;
+}
+
+.toggle__item {
+  margin-bottom: 39px;
+}
+
+.toggle__item:last-child {
+  margin-bottom: 55px;
+}
+
+.toggle__link {
+  color: @text-color;
+  text-decoration: none;
+}
+
+.toggle__popup-btn {
+  display: block;
+  margin: 0 auto;
 }

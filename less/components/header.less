@@ -1,11 +1,20 @@
 .header {
+  position: relative;
   background-color: @header-bg-color;
   width: 1170px;
   padding-top: 55px;
   padding-bottom: 48px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .header__navigation {
   margin-left: 155px;
   margin-right: 55px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 55px;
+  }
 }

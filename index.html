@@ -28,7 +28,7 @@
           </a>
         </li>
       </ul>
-      <div class="navigation__toggle-wrapper navigation__toggle-wrapper--closed toggle">
+      <div class="navigation__toggle-wrapper toggle toggle--closed">
         <button class="toggle__btn-toggle" type="button">
           <span class="visually-hidden">
             Open menu
@@ -57,9 +57,25 @@
             </a>
           </li>
           </ul>
-          <button class="toggle__popup-btn popup-button" type="button">
+          <!-- <button class="toggle__popup-btn popup-button" type="button">
             Open pop-up button
-          </button>
+          </button> -->
+          <div class="toggle__modal-wrapper">
+            <input type="checkbox" id="modal-input">
+            <label class="toggle__popup-btn popup-button popup-button--open" for="modal-input">
+              Open pop-up button
+            </label>
+            <div class="toggle__modal modal">
+              <div class="modal__popup">
+                <label class="toggle__popup-btn popup-button popup-button--close" for="modal-input">
+                  X
+                </label>
+                <p class="modal__text">
+                  Pop-up
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -71,9 +87,22 @@
     <section class="main__slider slider">
       <div class="slider__slide slider__slide--first"></div>
       <div class="slider__slide slider__slide--second"></div>
-      <button class="slider__popup-btn popup-button" type="button">
-        Open pop-up button
-      </button>
+      <div class="slider__modal-wrapper">
+        <input type="checkbox" id="modal-input">
+        <label class="slider__popup-btn popup-button popup-button--open" for="modal-input">
+          Open pop-up button
+        </label>
+        <div class="slider__modal modal">
+          <div class="modal__popup">
+            <label class="slider__popup-btn popup-button popup-button--close" for="modal-input">
+              X
+            </label>
+            <p class="modal__text">
+              Pop-up
+            </p>
+          </div>
+        </div>
+      </div>
       <button class="slider__arrow slider__arrow--prev">
         <span class="visually-hidden">
           Previous slide
@@ -110,9 +139,25 @@
       <p class="block-three__text">
         Text utp
       </p>
-      <button class="block-three__popup-btn popup-button" type="button">
+      <!-- <button class="block-three__popup-btn popup-button" type="button">
         Open pop-up button
-      </button>
+      </button> -->
+      <div class="block-three__modal-wrapper">
+        <input type="checkbox" id="modal-input">
+        <label class="block-three__popup-btn popup-button popup-button--open" for="modal-input">
+          Open pop-up button
+        </label>
+        <div class="block-three__modal modal">
+          <div class="modal__popup">
+            <label class="block-three__popup-btn popup-button popup-button--close" for="modal-input">
+              X
+            </label>
+            <p class="modal__text">
+              Pop-up
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="page__footer footer">
@@ -139,5 +184,17 @@
       </li>
     </ul>
   </footer>
+  <!-- <div class="page__modal modal">
+    <div class="modal__popup">
+      <button class="modal__close-button">
+        <span class="visually-hidden">
+          Close
+        </span>
+      </button>
+      <p class="modal__text">
+        Pop-up
+      </p>
+    </div>
+  </div> -->
 </body>
 </html>

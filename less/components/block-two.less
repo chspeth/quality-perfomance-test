@@ -2,6 +2,11 @@
   display: grid;
   grid-gap: 13px;
   grid-template-columns: repeat(4, auto);
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .block-two__block {
@@ -55,4 +60,10 @@
 
 .block-two__block--fourth::after {
   content: "4";
+}
+
+@media (min-width: @tablet-width) {
+  .block-two__block {
+    width: 100%;
+  }
 }

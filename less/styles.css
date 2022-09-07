@@ -2,7 +2,8 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 1px;
   font-style: normal;
   font-size: 28px;
   line-height: 45px;
@@ -19,10 +20,9 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.page__header {
-  margin: 0 auto;
-}
-.page__main {
+.page__header,
+.page__main,
+.page__footer {
   margin: 0 auto;
 }
 .header {
@@ -77,7 +77,7 @@ body {
   position: absolute;
   height: 3px;
   width: 43px;
-  top: 10px;
+  top: 7px;
   left: 0;
   background-color: #fff;
   box-shadow: 0 12px 0 0 #ffffff, 0 24px 0 0 #ffffff;
@@ -92,6 +92,7 @@ body {
 .main__header {
   margin: 0;
   position: absolute;
+  word-spacing: 7px;
   top: 98px;
   left: 308px;
   font-size: 45px;
@@ -129,9 +130,9 @@ body {
 }
 .slider__arrow {
   position: absolute;
-  top: 50px;
-  width: 37px;
-  height: 37px;
+  top: 60px;
+  width: 50px;
+  height: 50px;
   background-color: transparent;
   border: solid #ffffff;
   border-width: 0 2px 2px 0;
@@ -139,11 +140,11 @@ body {
 }
 .slider__arrow--prev {
   transform: rotate(135deg);
-  left: 51px;
+  left: 61px;
 }
 .slider__arrow--next {
   transform: rotate(-45deg);
-  right: 51px;
+  right: 61px;
 }
 .popup-button {
   width: 262px;
@@ -217,6 +218,7 @@ body {
   margin-bottom: 40px;
 }
 .block-three__block {
+  box-sizing: border-box;
   width: 198px;
   height: 198px;
   border: 2px solid #00FF4A;
@@ -239,5 +241,35 @@ body {
   font-size: 30px;
   margin: 0;
   margin-bottom: 40px;
+  padding-left: 15px;
   text-align: center;
+  letter-spacing: normal;
+}
+.footer {
+  background-color: #D87FF6;
+  box-sizing: border-box;
+  padding: 27.5px;
+  width: 1170px;
+}
+.footer__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 750px;
+  margin: 0;
+  margin-left: 135px;
+}
+.footer__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 5;
 }

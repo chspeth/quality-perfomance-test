@@ -18,6 +18,7 @@
   border: 2px solid #00FF4A;
   border-radius: 35px;
   background-color: #497957;
+  flex-shrink: 1;
 }
 .block-three__block--current {
   box-shadow: 2px 5px 10px #497957;

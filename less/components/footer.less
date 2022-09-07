@@ -3,6 +3,10 @@
   box-sizing: border-box;
   padding: 27.5px;
   width: 1170px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .footer__list {
@@ -13,9 +17,18 @@
   width: 750px;
   margin: 0;
   margin-left: 135px;
+
+  @media (min-width: @tablet-width) {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .footer__link {
   color: @text-color;
   text-decoration: none;
+}
+
+.footer__link:hover {
+  opacity: 0.6;
 }

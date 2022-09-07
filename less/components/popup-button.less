@@ -1,4 +1,6 @@
 .popup-button {
+  box-sizing: border-box;
+  padding: 15px 0;
   width: 262px;
   height: 58px;
   background-color: #FF4B4B;
@@ -6,5 +8,20 @@
   border: none;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
   color: @text-color;
+  cursor: pointer;
+}
+
+.popup-button--close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 43px;
+  height: 39px;
+  background-color: #497957;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 6px;
 }
