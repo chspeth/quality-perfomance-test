@@ -1,0 +1,25 @@
+.toggle__btn-toggle {
+  position: relative;
+  display: block;
+  width: 43px;
+  height: 27px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.toggle__wrapper {
+  display: none;
+}
+
+.navigation__toggle-wrapper .toggle__btn-toggle::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 43px;
+  top: 10px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 12px 0 0 #ffffff, 0 24px 0 0 #ffffff;
+
+}

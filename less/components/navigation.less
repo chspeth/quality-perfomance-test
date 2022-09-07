@@ -1,0 +1,29 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 290px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.navigation__link {
+  color: @text-color;
+  text-decoration: none;
+}
+
+.navigation__link--current {
+  text-decoration-line: underline;
+}

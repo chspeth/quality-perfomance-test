@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 45px;
+  color: #FFFFFF;
+  overflow-x: hidden;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page__header {
+  margin: 0 auto;
+}
+.page__main {
+  margin: 0 auto;
+}
+.header {
+  background-color: #B47FF6;
+  width: 1170px;
+  padding-top: 55px;
+  padding-bottom: 48px;
+}
+.header__navigation {
+  margin-left: 155px;
+  margin-right: 55px;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 290px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.navigation__item:not(:last-child) {
+  margin-right: 60px;
+}
+.navigation__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.navigation__link--current {
+  text-decoration-line: underline;
+}
+.toggle__btn-toggle {
+  position: relative;
+  display: block;
+  width: 43px;
+  height: 27px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.toggle__wrapper {
+  display: none;
+}
+.navigation__toggle-wrapper .toggle__btn-toggle::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 43px;
+  top: 10px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 12px 0 0 #ffffff, 0 24px 0 0 #ffffff;
+}
+.main {
+  position: relative;
+  background-color: #A6C9FF;
+  width: 1170px;
+  padding-top: 40px;
+}
+.main__header {
+  margin: 0;
+  position: absolute;
+  top: 98px;
+  left: 308px;
+  font-size: 45px;
+  line-height: 45px;
+}
+.slider {
+  width: 1170px;
+}
+.slider__slide {
+  width: 1170px;
+  height: 176px;
+}
+.slider__slide--first {
+  background-color: #7029CB;
+}
+.slider__slide--second {
+  background-color: #29cbc1;
+  position: absolute;
+  top: -176px;
+  display: none;
+}
