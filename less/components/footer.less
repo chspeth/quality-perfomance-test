@@ -4,7 +4,7 @@
   padding: 27.5px;
   width: 1170px;
 
-  @media (min-width: @tablet-width) {
+  @media (max-width: @tablet-width) {
     width: 100%;
   }
 }
@@ -18,9 +18,15 @@
   margin: 0;
   margin-left: 135px;
 
-  @media (min-width: @tablet-width) {
+  @media (max-width: @tablet-width) {
     width: 80%;
     margin: 0 auto;
+  }
+
+  @media (max-width: @mobile-width) {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
   }
 }
 

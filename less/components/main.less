@@ -5,7 +5,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
-  @media (min-width: @tablet-width) {
+  @media (max-width: @tablet-width) {
     width: 100%;
   }
 }
@@ -20,8 +20,13 @@
   line-height: 45px;
   z-index: 3;
 
-  @media (min-width: @tablet-width) {
+  @media (max-width: @tablet-width) {
     left: 150px;
+  }
+
+  @media (max-width: @mobile-width) {
+    left: 70px;
+    top: 70px;
   }
 }
 

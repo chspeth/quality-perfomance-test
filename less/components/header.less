@@ -5,8 +5,13 @@
   padding-top: 55px;
   padding-bottom: 48px;
 
-  @media (min-width: @tablet-width) {
+  @media (max-width: @tablet-width) {
     width: 100%;
+  }
+
+  @media (max-width: @mobile-width) {
+    padding-top: 15px;
+    padding-bottom: 0;
   }
 }
 
@@ -14,7 +19,11 @@
   margin-left: 155px;
   margin-right: 55px;
 
-  @media (min-width: @tablet-width) {
+  @media (max-width: @tablet-width) {
     margin-left: 55px;
+  }
+
+  @media (max-width: @mobile-width) {
+    margin: 0 auto;
   }
 }

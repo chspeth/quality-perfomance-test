@@ -6,6 +6,10 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
+
+  @media (max-width: @mobile-width) {
+    display: none;
+  }
 }
 
 .toggle--closed .toggle__wrapper {
@@ -26,6 +30,14 @@
   z-index: 4;
   box-sizing: border-box;
   padding: 33px 64.5px;
+
+  @media (max-width: @mobile-width) {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-top: 5px;
+  }
 }
 
 .toggle--closed .toggle__btn-toggle::before {
@@ -62,14 +74,25 @@
 
 .toggle__list {
   list-style-type: none;
+  padding: 0;
 }
 
 .toggle__item {
   margin-bottom: 39px;
+
+  @media (max-width: @mobile-width) {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .toggle__item:last-child {
   margin-bottom: 55px;
+
+  @media (max-width: @mobile-width) {
+    margin-bottom: 8px;
+  }
 }
 
 .toggle__link {
