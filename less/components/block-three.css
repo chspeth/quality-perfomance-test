@@ -12,6 +12,7 @@
   margin-bottom: 40px;
 }
 .block-three__block {
+  box-sizing: border-box;
   width: 198px;
   height: 198px;
   border: 2px solid #00FF4A;
